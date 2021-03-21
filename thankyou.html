@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact | Learning Web Design, 5e</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Source+Sans+Pro:400,400i,600" rel="stylesheet">
+    <script type="text/javascript"> 
+function hgsubmit() 
+{ 
+if (/\S+/.test(document.hgmailer.name.value) == false) alert ("Please provide your name."); 
+else if (/^\S+@[a-z0-9_.-]+\.[a-z]{2,6}$/i.test(document.hgmailer.email.value) == false) alert ("A valid email address is required."); 
+ else if (/\S+/.test(document.hgmailer.comment.value) == false) alert ("Your email message is needed."); 
+  else { 
+       document.hgmailer.submit(); 
+       alert (' Thank you! \n Your email is sent.'); 
+       } 
+} 
+</script> 
+  <style>
+  @import url(reset.css);
+  @import url(lwd5.css);
+
+p {
+	margin-top: 1rem;
+	line-height: 1.2;
+}
+p.contact {
+	line-height: 1.2;
+	margin-left: 1rem;
+}
+p a {
+	display: block;
+	margin-top: .5rem;
+	font-size: 1.5rem;
+	color: #5a9b17;
+}
+
+p a:hover,
+p a:focus,
+p a:active {
+	color: #8cb95e;
+	color: #B8E986;
+}
+
+p.note { 
+	font-size: .875rem;
+	line-height: 1rem;
+}
+p.note a {
+	font-size: inherit;
+	display: inline;
+}
+#contactform {
+	margin-top: 2rem;
+	border-top: 3px double #ddd;
+	padding-top: .5rem;
+}
+/*  FORM STYLES */
+/* ========= FORM DIMENSIONS AND STYLING =========  */
+
+form {
+	max-width: 100%;
+	/* margin-top: 1.5rem; */
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
+	}
+	
+/* ========= FLEXBOX ALIGNMENT STYLES ============ */
+
+form li {
+	  /* the label and input become flex items within each list item */
+	  /* Wrapping is turned on so labels stack above inputs on narrow viewports */
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+	align-items: baseline;
+}
+label {
+	/* labels are fixed at 8ems wide with a little margin to keep them 
+	from bumbing into other elements */
+	flex: 0 0 6rem;
+	margin-right: 1em;
+	margin-bottom: .25rem;
+	color: #4a4a4a;
+
+}
+input, textarea {
+	/* form inputs and fieldsets are fully flexible to fill the available width */
+	flex: 1 1 20em;
+}
+
+input.textinput {
+	height: 2rem;
+	border: 1px solid rgba(0,0,0,.2);
+	padding-left: 6px;
+	font-family: inherit;
+	font-size: 1rem;
+	background-color: #f2f5d5;
+}
+textarea {
+	height: 10rem;
+	border: 1px solid rgba(0,0,0,.2);
+	padding-left: 6px;
+	padding-top: 6px;
+	font-family: inherit; 
+	font-size: 1rem;
+	line-height: 1.375;
+	overflow: auto;
+	resize: none;
+	background-color: #f2f5d5;
+}
+input[type="button"] {
+	/* I've changed the style of the button and set its side margins to "auto" so it is 
+	always centered in the width of the form */
+	width: 10rem;
+	height: 2rem;
+	background: white;
+	border: 1px solid #5a9b17;
+	border-radius: 4px;
+	font-size: inherit;
+	flex: 0 1 8rem;
+	margin: 0 auto ;
+}
+
+/* ========= FIELDSET AND LEGEND STYLES ========= */
+fieldset {
+	/* Turns off the default box that browsers draw around fieldsets */
+	padding: 0;
+	border: none;
+}
+legend {
+	/* this hides the legend, but it will still be read by screenreaders 
+	for each checkbox/button option for acccessibility */
+	/* NOTE: There is also a label that displays for each fieldset, so I made sure the
+	label and legend were different as not to have the same term read twice */
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+
+<div id="topbar">
+	<span class="topbar-title"><a href="/index.html">Learning Web Design</a></span><a href="#menu" class="menulink">MENU</a>
+</div>
+
+<div id="container">
+<main>
+<h1>Thank you!</h1>
+<p><b>Your message has been sent.</b> If your mail requires a reply, Jennifer should get back to you shortly.</p>
+
+
+
+<!-- optional top link 
+<div id="tothetop">
+	<a href="#topbar">BACK TO TOP</a>
+</div> -->
+</main>
+
+<aside>
+<div id="book">
+	<img src="images/lwd5_cover.png" alt="Learning Web Design">
+	<div id="aboutbook">
+  	  <ul>
+    	<li>Paperback, 808 pages</li>
+    	<li>ISBN: 978-1-491-96020-2</li>
+    	<li>Published: May 2018</li>
+  	  </ul>
+	</div>
+</div>
+<!-- add class="current" to current page -->
+<nav id="menu">
+	<ul>
+		<li><a href="/index.html">HOME</a></li>
+		<li><a href="/toc.html">Contents</a></li>
+		<li><a href="/articles/index.html">Articles</a></li>
+		<li><a href="/5e/materials/index.html">Materials</a></li>
+		<li><a href="/links.html">Links</a></li>
+		<li><a href="/contact.html" class="current">Contact</a></li>
+	</ul>
+</nav>
+</aside>
+</div> <!-- end container -->
+</body>
+</html>
