@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Articles | Learning Web Design, 5e</title>
+	<title>Articles | Learning Web Design, 6e</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Source+Sans+Pro:400,400i,600" rel="stylesheet">
   <style>
   @import url(../reset.css);
-  @import url(../lwd5.css);
+  @import url(../lwd6.css);
 
 b {
   	color: #5a9b17;
@@ -39,7 +39,9 @@ dl+p {
 	margin-top: 3rem;
 	font-style: italic;
 }
-
+hr {
+	margin-block-start: 1.25rem;
+}
   </style>
 
 </head>
@@ -58,19 +60,53 @@ dl+p {
 <dl>
 	<dt>Getting Your Pages on the Web</dt>
 	<dd>This article covers how to get your own domain name as well as tips for finding a server to host your website. It provides additional information to topics covered in Chapter 2.</dd>
-	<dd><a href="LWD5_Hosting.pdf">LWD5_Hosting.pdf (PDF)</a></dd>
+	<dd><a href="LWD_Hosting.pdf">LWD_Hosting.pdf (PDF)</a></dd>
 
-	<dt>Border Images</dt>
-	<dd>You can use an image to create fancy borders around elements. This article, referenced in the borders discussion in Chapter 14, tells you how.</dd>
-	<dd><a href="LWD5_BorderImages.pdf">LWD5_BorderImages.pdf (PDF)</a></dd>
+	<dt>Introduction to the Command Line</dt>
+	<dd>Much of modern development makes use of command-line tools and programs. This article provides a basic introduction to using the terminal. </dd>
+	<dd><a href="LWD_Web_Storage.pdf">LWD_Web_Storage.pdf (PDF)</a></dd>
 
-	<dt>Page Layout with Floats and Positioning</dt>
-	<dd>These days, the proper way to create columned page layouts is to use CSS Flexbox and Grid. However, these techniques are not supported in Internet Explorer 8. If your browser use statistics or client demand that you support IE8, you can use floats and positioning to create columned layouts as outlined in this article. If you don't need to support IE8, you can skip it. These are antiquated techniques only useful only as fallbacks.</dd>
-	<dd><a href="LWD5_FloatLayout.pdf">LWD5_FloatLayout.pdf (PDF)</a></dd>
+	<dt>Version Control with Git</dt>
+	<dd>The version control software, Git, is central to the web developent ecosystem. To learn the difference between Git and Github or a "branch" and a "fork", start here.</dd>
+	<dd><a href="LWD_Git.pdf">LWD_Git.pdf (PDF)</a></dd>
+	<hr>
 
-	<dt>Multicolumn Layouts</dt>
-	<dd>In addition to Flexbox and Grid Layout (covered in Chapter 16), you can format text content into columns using the CSS Multi-Column module. The layout chapter was already big enough, so this lesser-used technique is described in this supplemental article.</dd>
-	<dd><a href="LWD5_Multicolumn.pdf">LWD_Multicolumn.pdf (PDF)</a></dd>
+	<dt>HTML: Responsive Image Markup</dt>
+	<dd>This excerpt from the 5th edition provides a detailed overview of the markup used to serve appropriately sized images based on screen size and other factors.</dd>
+	<dd><a href="LWD_Responsive_Image_Markup.pdf">LWD_Responsive_Image_Markup.pdf (PDF)</a></dd>
+
+	<dt>HTML: From HTML+ to HTML5</dt>
+	<dd>This history of HTML, with its many twists and turns, provides context for our current markup best practices.</dd>
+	<dd><a href="LWD_HTML5.pdf">LWD_HTML5.pdf (PDF)</a></dd>
+<hr>
+	<dt>CSS: Tiling Background Images</dt>
+	<dd>This article provides a deeper dive into background image properties, including exercises. (The materials for the exercises are provided <a href="../6e/materials/index.html">here</a>.) </dd>
+	<dd><a href="LWD_Tiling_Background_Images.pdf">LWD_Tiling_Background_Images.pdf (PDF)</a></dd>
+
+	<dt>CSS: Border Images</dt>
+	<dd>You can use an image to create fancy borders around elements. This article tells you how.</dd>
+	<dd><a href="LWD_BorderImages.pdf">LWD_BorderImages.pdf (PDF)</a></dd>
+
+	<dt>CSS: CSS Shapes</dt>
+	<dd>Learn more about the properties for making text wrap around floated elements and images in interesting shapes.</dd>
+	<dd><a href="LWD_CSS_Shapes.pdf">LWD_CSS_Shapes.pdf (PDF)</a></dd>
+
+	<dt>CSS: Styling Tables</dt>
+	<dd>This article covers a few CSS properties related to styling HTML tables</dd>
+	<dd><a href="LWD_Styling_Tables.pdf">LWD_Styling_Tables.pdf (PDF)</a></dd>
+
+	<dt>CSS: Multicolumn Layouts</dt>
+	<dd>In addition to Flexbox and Grid Layout, you can format text content into columns using the CSS Multi-Column module.</dd>
+	<dd><a href="LWD_Multicolumn.pdf">LWD_Multicolumn.pdf (PDF)</a></dd>
+<hr>
+	<dt>JavaScript: Promises and Asynchronous Code, by Aaron Gustafson</dt>
+	<dd>This brief article looks at the Promis object used to allow code to keep executing without waiting for other processes to complete. </dd>
+	<dd><a href="LWD_Promises.pdf">LWD_Promises.pdf (PDF)</a></dd>
+
+	<dt>JavaScript: Web Storage, by Aaron Gustafson</dt>
+	<dd>Learn more about how information is stored in the browser so it is available between sessions. The files for the exercise are included with the <a href="../6e/materials/index.html">materials</a> for the book.</dd>
+	<dd><a href="LWD_Web_Storage.pdf">LWD_Web_Storage.pdf (PDF)</a></dd>
+
 </dl>
 
 <p>Can't open the PDF file? Download the <a href="https://get.adobe.com/reader/">Acrobat Reader</a>.</p>
@@ -90,12 +126,12 @@ dl+p {
 
 <aside>
 <div id="book">
-	<img src="../images/lwd5_cover.png" alt="Learning Web Design">
+	<img src="../images/lwd6_cover.webp" alt="Learning Web Design" style="border: 1px solid">
 	<div id="aboutbook">
   	  <ul>
-    	<li>Paperback, 808 pages</li>
-    	<li>ISBN: 978-1-491-96020-2</li>
-    	<li>Published: May 2018</li>
+    	<li>Paperback, 910 pages</li>
+    	<li>ISBN: 978-1098137687</li>
+    	<li>Published: July 2025</li>
   	  </ul>
 	</div>
 </div>
@@ -105,8 +141,7 @@ dl+p {
 		<li><a href="/index.html">HOME</a></li>
 		<li><a href="/toc.html">Contents</a></li>
 		<li><a href="/articles/index.html" class="current">Articles</a></li>
-		<li><a href="/5e/materials/index.html">Materials</a></li>
-		<li><a href="/links.html">Links</a></li>
+		<li><a href="/6e/materials/index.html">Materials</a></li>
 		<li><a href="/instructors/index.html">Instructors</a>
 		<li><a href="/contact.html">Contact</a></li>
 	</ul>
